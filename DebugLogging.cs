@@ -15,7 +15,7 @@ namespace RedditBackgroundChanger
             StreamWriter sw;
             using(sw = new StreamWriter($@"{ConfigurationManager.AppSettings["debugOutputPath"]}WallpaperChanger.log.txt",true))
             {
-                sw.WriteLine(DateTime.Today.ToString("MM/dd/yy t"));
+                sw.WriteLine(DateTime.Now.ToString("MM/dd/yy h:mm tt"));
                 sw.WriteLine(textToWrite);
             }
         }
